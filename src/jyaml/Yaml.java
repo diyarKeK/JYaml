@@ -210,4 +210,16 @@ public class Yaml {
             writer.write(obj.toString());
         }
     }
+
+    public static void write(File file,YamlObject obj, int indent) throws IOException {
+        try (FileWriter writer = new FileWriter(file)) {
+            writer.write(obj.toString(indent));
+        }
+    }
+
+    public static void write(String file_path, YamlObject obj, int indent) throws IOException {
+        try (FileWriter writer = new FileWriter(file_path)) {
+            writer.write(obj.toString(indent));
+        }
+    }
 }
