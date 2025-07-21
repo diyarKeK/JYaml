@@ -1,6 +1,5 @@
 package jyaml;
 
-import javax.imageio.IIOException;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
